@@ -1,9 +1,10 @@
 class Game
+  attr_reader :home, :guest
+
   def initialize(home:, guest:)
     @home = home
     @guest = guest
   end
-  attr_reader :home, :guest
 
   def winner
     if home > guest
@@ -12,6 +13,7 @@ class Game
       :guest
     end
   end
+  
   def draw?
     home == guest
   end

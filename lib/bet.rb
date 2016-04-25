@@ -1,9 +1,10 @@
 class Bet
+  attr_reader :team, :value
+
   def initialize(team:, value:)
     @team = team
     @value = value
   end
-  attr_reader :team, :value
 
   def gain(game)
     if game.draw?
