@@ -13,7 +13,7 @@ class Game
       :guest
     end
   end
-  
+
   def draw?
     home == guest
   end
