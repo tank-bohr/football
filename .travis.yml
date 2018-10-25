@@ -5,6 +5,7 @@ rvm:
 
 script:
   - rake
+  - ansible --version
 
 deploy:
   provider: script
